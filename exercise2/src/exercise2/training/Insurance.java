@@ -7,6 +7,7 @@ public class Insurance {
 	private String policyHolderName;
 	private int age;
 	private double insuredAmount;
+	
 	public int getPolicyNumber() {
 		return policyNumber;
 	}
@@ -44,15 +45,16 @@ public class Insurance {
 	}
 	public double calulatePremium()
 	{
-		
-		if(this.age<25)
+		double premium = 0.0;
+		if(this.age < 25)
 		{
-			return 0.6;
+			premium = 0.6;
 		}
 		else
 		{
-			return 0.7;
+			premium = 0.7;
 		}
+		return premium;
 	}
 	
 }
